@@ -1,6 +1,7 @@
-<# This form was created using POSHGUI.com  a free online gui designer for PowerShell
-.NAME
-    Untitled
+<# Hyper-V Automation Tool GUI v1.1
+
+This version will take text inputs and write them to a text file. 
+
 #>
 
 Add-Type -AssemblyName System.Windows.Forms
@@ -10,7 +11,7 @@ Add-Type -AssemblyName System.Windows.Forms
 
 $HyperVToolv1                    = New-Object system.Windows.Forms.Form
 $HyperVToolv1.ClientSize         = '555,654'
-$HyperVToolv1.text               = "Hyper-V Automation Tool v0.2"
+$HyperVToolv1.text               = "Hyper-V Automation Tool v1.1"
 $HyperVToolv1.BackColor          = "#ffffff"
 $HyperVToolv1.TopMost            = $false
 
@@ -172,7 +173,7 @@ function BUILD_VM {
 
 if ($Subnet_Value.Text -like "*Palaven*") {
     
-   $VMNAME_Value.text,$CPU_Value.text,$RAM_Value.text,$Subnet_value.Text,$OS_Value.Text | Out-file -filepath "\\geth.net\gethshare\Primary\it\VMConfig\sovreignvmconfig.txt"
+   $VMNAME_Value.text,$CPU_Value.text,$RAM_Value.text,$Subnet_value.Text,$OS_Value.Text | Out-file -filepath "\\geth.net\gethshare\Primary\it\VMConfig\SovreignVMConfig.txt"
 
    }
    else {
