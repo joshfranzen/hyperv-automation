@@ -18,7 +18,7 @@ A functioning Unattend.xml file, you should be able to have a PXE guest use the 
 
 
 
-Function Create-webVM {
+Function Create-NewVM {
 
   
     
@@ -91,4 +91,4 @@ Function Create-webVM {
 }
 
 #execute the function and create the new VM
-create-webvm 
+create-newvm 
